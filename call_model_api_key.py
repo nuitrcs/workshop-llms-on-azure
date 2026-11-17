@@ -10,8 +10,6 @@ and modify the script to load the key from there.
 
 Run:
     python call_model_api_key.py
-
-NOTE: this file is for exposition purposes and was not tested.
 """
 
 import os
@@ -31,8 +29,8 @@ client = OpenAI(
 response = client.chat.completions.create(
     model=config["deployment"],  # deployment name, not the model family
     messages=[
-        {"role": "system", "content": "You are a helpful assistant."},
-        {"role": "user", "content": "In one sentence, what is Azure AI Foundry?"},
+        {"role": "system", "content": "You are a helpful AI assistant."},
+        {"role": "user", "content": "In one short paragraph, how can the Azure AI Foundry help research at Northwestern University?"},
     ],
 )
 

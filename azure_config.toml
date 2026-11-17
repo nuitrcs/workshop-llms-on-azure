@@ -1,0 +1,6 @@
+[azure_openai]
+# Endpoint of the Foundry resource (v1 API). Keep the trailing /openai/v1/
+endpoint = "<your_azure_openai_endpoint_here>"
+
+# The *deployment* name you chose in Foundry (not necessarily the model name)
+deployment = "gpt-5.4-nano"

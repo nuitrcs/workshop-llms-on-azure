@@ -26,7 +26,7 @@ response = client.chat.completions.create(
     model=config["deployment"],  # deployment name, not the model family
     messages=[
         {"role": "system", "content": "You are a helpful AI assistant."},
-        {"role": "user", "content": "In one shor paragraph, how can the Azure AI Foundry help research at Northwestern University?"},
+        {"role": "user", "content": "In one short paragraph, how can the Azure AI Foundry help research at Northwestern University?"},
     ],
 )
 

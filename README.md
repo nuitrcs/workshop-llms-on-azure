@@ -11,7 +11,13 @@ This will prompt you to login using the browser. If you're running this from que
 az login --use-device-code
 ```
 
-Your account also needs the **Cognitive Services OpenAI User** role (or **Azure AI User**) on the Foundry resource. Owner or Contributor alone is not enough to call the model with your Azure login. Without it, you'll get a 401/403 error. Roles are assigned in the Azure portal under the resource's **Access control (IAM)**.
+You can also use the API key instead of authenticating, but we recommend the method above.
+
+## Note on user permissions
+
+Your account also needs the appropriate permissions in order to call Foundry models. The specific permission depends on the authentication method (Azure CLI login as above, or through API keys), and the resource type. Look into Azure documentation for specifics.
+
+Common roles include **Foundry User** and **Cognitive Services User** on the Foundry resource. The management roles **Owner** or **Contributor** alone are not enough to call the model with your Azure CLI authentication. If your role lacks the appropriate permissions, you're likely to encounter a 401/403 error.
 
 ## Needed libraries
 

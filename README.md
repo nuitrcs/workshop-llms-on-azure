@@ -44,9 +44,7 @@ pip install azure-identity openai
 
 Authenticate to Azure.
 
-To authenticate to Azure from your computer, follow the steps [in the Azure CLI documentation](https://learn.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest).
-
-By following the instructions you should be able to login using the browser.
+To authenticate to Azure from your computer, you will first need the azure cli tool. You can follow [Microsoft's Azure cli documentation](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest). Once installation is successful, follow the steps [in the Azure CLI documentation](https://learn.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) to authenticate using `az login`, which will redirect you to login using the browser.
 
 (Note: If you're running this from quest, where no browser is available, choose the option:
 `az login --use-device-code`).
